@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <title>Inquiry Screen</title>
+    <script src="findPagejs.js"></script>
+</head>
+<body class ="find">
+
+    <div ng-app="myApp" ng-controller="myCtrl" >
+
+        <p> ID : <input type="number" ng-model="id"><button ng-click="order(id)">Find</button></p>
+
+        <p><a href="/" target="_blank">Go to Entry Screen</a> </p>
+
+        <div class="info" >
+            <p>Name : {{student.name}}</p>
+            <p>Age : {{student.age}}</p>
+            <p>Uni : {{student.uni}}</p>
+            <p>Id : {{student.id}}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+    body{
+        text-align:center;
+        padding-top: 10px;
+    }
+    .ng-valid{
+        background-color:white;
+        color:black;
+    }
+    .ng-invalid{
+        background-color:yellow;
+        color:black;
+    }
+    .info{
+        border: 2px solid grey;
+        position:center;
+        border-radius: 4px;
+        padding: 5px;
+    }
+
+    .find{
+        padding-top: 50px;
+    }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="design.css">
+    <title>Record Student</title>
+    <script src="homePagesjs.js"></script>
+
+</head>
+
+<body>
+    <h1>Student</h1>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        
+        <form>
+            <p> Name       : <input type="text"     ng-model="stname"></p>
+            <p> Age        : <input type="number"   ng-model="stage" ></p>
+            <p> University : <input type="text"     ng-model="stuni"></p>
+            <p> ID         : <input type="number"   ng-model="stid"></p>
+        </form>
+
+        <p><button ng-click="sendData()" >Save Student</button></p>
+        <p>{{message}}</p>
+        <p><a href="findPage" target="_blank">Go to İnquiry Screen</a> </p>
+    </div>
+
+</body>
+</html>
